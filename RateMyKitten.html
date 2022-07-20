@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rate My Kitten</title>
+    <link rel="stylesheet" href="RateMyKitten.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <h1 id="title">Rate My Kitten</h1>
+        <p id="description">Answer questions about your kitten and we'll be the judges!</p>
+        </section>
+        <form id="survey-form">
+          <fieldset>
+            <h2>Contact Information</h2>
+            <label id="name-label">Name: </label><input type="text" id="name" placeholder="First and last name" required>
+            <label id="number-label">Age: </label><input type="number" id="number" min="16" max="120" placeholder="16+ is required">
+            <label>Phone Number: </label><input type="tel" id="phone">
+            <label id="email-label">Email Address: </label><input type="email" id="email" placeholder="example@domain.com" required>
+          </fieldset>
+          <hr>
+          <fieldset>
+            <h2>Kitty Basics</h2>
+            <label>Name: </label><input type="text" id="catName">
+            <label>Age: </label><input type="number" id="catAge" max="30" >
+            <label>Weight: </label><input type="number" id="catWeight">
+            <label>Coloring: </label>
+              <select id="furColors">
+                <option value="">(select an option)</option>
+                <option value="1">Black</option>
+                <option value="2">White</option>
+                <option value="3">Ginger</option>
+                <option value="4">Calico</option>
+                <option value="5">Tabby</option>
+                <option value="6">Turtle</option>
+                <option value="7">Too unique for this list</option>
+              </select>
+            <label>Fur length: </label>
+              <select id="dropdown">
+                <option value="">(select an option)</option>
+                <option value="1">Bald as a bat</option>
+                <option value="2">Super short hair</option>
+                <option value="3">Somewhere in the middle</option>
+                <option value="4">Fluffy.. basically a cloud</option>
+              </select>
+          </fieldset>
+          <hr>
+          <fieldset>
+            <h2>All the Deets</h2>
+            <label>Motivated mostly by: </label>
+              <input type="radio" name="motivation" value="toys">
+              <label class="toys" for="toys">Toys</label>
+              <input type="radio" name="motivation" value="treats">
+              <label class="treats" for="treats">Treats</label>
+              <input type="radio" name="motivation" value="snuggles">
+              <label class="snuggles" for="snuggles">Snuggles</label>
+            <br><label>Best described as.. </label><br>
+              <label for="loud"> Loud</label>
+              <input type="checkbox" id="loud" name="loud" value="loud">
+              <label for="talkative"> Talkative</label>
+              <input type="checkbox" id="talkative" name="talkative" value="talkative">
+              <label for="curious"> Curious</label>
+              <input type="checkbox" id="curious" name="curious" value="curious">
+              <label for="hungry"> Hungry</label>
+              <input type="checkbox" id="hungry" name="hungry" value="hungry">
+              <label for="snuggler"> Snuggler</label>
+              <input type="checkbox" id="snuggler" name="snuggler" value="snuggler">
+              <label for="timid"> Timid</label>
+              <input type="checkbox" id="timid" name="timid" value="timid">
+              <label for="strong"> Strong</label>
+              <input type="checkbox" id="strong" name="strong" value="strong">
+              <label for="social"> Social</label>
+              <input type="checkbox" id="social" name="social" value="social">
+              <label for="sleepy"> Sleepy</label>
+              <input type="checkbox" id="sleepy" name="sleepy" value="sleepy">
+              <label for="mischievous"> Mischievous</label>
+              <input type="checkbox" id="mischievous" name="mischievous" value="mischievous">
+            <label class="specialSpacing">What else should we know about your furbaby? </label><textarea placeholder="Ex: My cat is the cutest you've ever seen!"></textarea>
+            <label>Upload the best picture! </label><input type="file" id="catPhoto" name="catPhoto">
+          </fieldset>
+          <input type="submit" id="submit">
+        </form>
+    </body>
+</html>
